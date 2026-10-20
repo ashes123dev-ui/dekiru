@@ -1,0 +1,1172 @@
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #10172A;
+    color: #C0C5D2;
+}
+
+
+
+
+body {
+    background-color: #10172A;
+    color: #C0C5D2;
+}
+
+
+.navbar {
+    background-color: #7562B5;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #C0C5D2;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF;
+}
+
+.navbar .nav-link {
+    color: #C0C5D2;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #FFFFFF;
+}
+
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.hero {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    background-color: #10172A;
+    color: #C0C5D2;
+}
+
+.hero-intro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-intro h1 {
+    color: #FFFFFF;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
+}
+
+.hero-intro h5 {
+    color: #7562B5;
+    margin-bottom: 20px;
+}
+
+.hero-intro p {
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.hero-background {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Blurred background image */
+.hero-background::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    background-image: url("images/IMG_20261020_111900.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.55);
+    z-index: -2;
+}
+
+/* Dark overlay for readability */
+.hero-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 23, 42, 0.25);
+    z-index: -1;
+}
+
+.hero-description {
+    margin: 30px;
+    padding: 30px;
+    width: 85%;
+    background: rgba(16, 23, 42, 0.65);
+    border: 1px solid rgba(192, 197, 210, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+.hero-description h2 {
+    color: #C0C5D2;
+    font-weight: bold;
+}
+
+.hero-description p {
+    color: #FFFFFF;
+    line-height: 1.8;
+}
+
+
+
+.quick-cards {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.quick-card {
+    flex: 1;
+    min-width: 0;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #C0C5D2;
+    background: #1B2140;
+    border: 1px solid #7562B5;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.quick-card .card-body {
+    padding: 0;
+}
+
+.quick-card h6 {
+    color: #C0C5D2;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.quick-card p {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.quick-card:hover {
+    background: #7562B5;
+    color: #FFFFFF;
+    transform: translateY(-4px);
+}
+
+.quick-card:hover h6 {
+    color: #FFFFFF;
+}
+
+
+
+/* contact */
+
+/* CONTACT PAGE */
+
+.contact-title {
+    color: #C0C5D2;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.contact-subtitle {
+    color: #A9B0C5;
+}
+
+.contact-card {
+    background-color: #1B2140;
+    border: 1px solid #7562B5;
+    border-radius: 15px;
+    color: #C0C5D2;
+}
+
+.contact-card h3 {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.contact-card h6 {
+    color: #B9A7FF;
+    font-weight: bold;
+}
+
+.contact-card p {
+    color: #C0C5D2;
+    margin-bottom: 0;
+}
+
+.contact-link {
+    color: #C0C5D2;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #B9A7FF;
+}
+
+.contact-card .form-label {
+    color: #C0C5D2;
+}
+
+.contact-card .form-control {
+    background-color: #10172A;
+    border: 1px solid #4D456F;
+    color: #FFFFFF;
+}
+
+.contact-card .form-control::placeholder {
+    color: #8F99B5;
+}
+
+.contact-card .form-control:focus {
+    background-color: #10172A;
+    color: #FFFFFF;
+    border-color: #B9A7FF;
+    box-shadow: 0 0 0 0.2rem rgba(117, 98, 181, 0.25);
+}
+
+.btn-contact {
+    background-color: #7562B5;
+    color: #FFFFFF;
+    border: 1px solid #7562B5;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #5D4A9B;
+    border-color: #5D4A9B;
+    color: #FFFFFF;
+}
+
+/* update for contact page */
+
+/* COMPACT CONTACT PAGE */
+
+.contact-title {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.contact-subtitle {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.contact-card {
+    border-radius: 12px;
+}
+
+.contact-card .card-body {
+    padding: 18px !important;
+}
+
+.contact-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px !important;
+}
+
+.contact-card h6 {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.contact-card p,
+.contact-link {
+    font-size: 13px;
+}
+
+.contact-card .mb-4 {
+    margin-bottom: 12px !important;
+}
+
+.contact-card .mb-3 {
+    margin-bottom: 10px !important;
+}
+
+.contact-card .form-control {
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.contact-card textarea.form-control {
+    height: 75px;
+}
+
+.btn-contact {
+    padding: 7px;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .contact-card {
+        height: auto;
+    }
+}
+
+
+
+/* about me page */
+
+
+/* ABOUT ME PAGE */
+
+.about-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about-title {
+    color: #C0C5D2;
+    font-size: 2.3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.about-subtitle {
+    color: #A9B0C5;
+    font-size: 14px;
+}
+
+.about-card {
+    background-color: #1B2140;
+    color: #C0C5D2;
+    border: 1px solid #7562B5;
+    border-radius: 15px;
+}
+
+.about-card h3 {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.about-card h6 {
+    color: #B9A7FF;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.about-card p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.about-role {
+    color: #B9A7FF;
+}
+
+.profile-placeholder {
+    width: 115px;
+    height: 115px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #7562B5;
+    border-radius: 50%;
+    background: #10172A;
+    color: #C0C5D2;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-divider {
+    border-color: #7562B5;
+    opacity: 0.7;
+}
+
+.profile-picture {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    border: 2px solid #7562B5;
+    border-radius: 50%;
+}
+
+
+
+/* SKILLS PAGE */
+
+.skills-section {
+    display: flex;
+    height: calc(100vh - 65px);
+    background-color: #10172A;
+    color: #C0C5D2;
+    overflow: hidden;
+}
+
+/* LEFT BLURRED BACKGROUND */
+
+.skills-background {
+    width: 42%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.skills-background::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    background-image: url("images/IMG_20261020_111900.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px) brightness(0.45);
+    z-index: -2;
+}
+
+.skills-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 23, 42, 0.35);
+    z-index: -1;
+}
+
+.skills-background-text {
+    text-align: center;
+    padding: 25px;
+}
+
+.skills-background-text h1 {
+    color: #FFFFFF;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.skills-background-text p {
+    color: #C0C5D2;
+    font-size: 14px;
+}
+
+/* RIGHT SKILLS AREA */
+
+.skills-content {
+    width: 58%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-content h2 {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.skills-subtitle {
+    color: #A9B0C5;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+/* SKILL CARDS + HOVER EFFECT */
+
+.skill-card {
+    padding: 20px;
+    background-color: #1B2140;
+    border: 1px solid #4D456F;
+    border-radius: 12px;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.skill-card h3 {
+    color: #B9A7FF;
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    color: #C0C5D2;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    background-color: #28254D;
+    border-color: #B9A7FF;
+    box-shadow: 0 8px 20px rgba(117, 98, 181, 0.2);
+}
+
+/* SMALLER SCREENS */
+
+@media (max-width: 768px) {
+    .skills-section {
+        height: auto;
+        min-height: calc(100vh - 65px);
+        overflow-y: auto;
+        flex-direction: column;
+    }
+
+    .skills-background {
+        width: 100%;
+        min-height: 220px;
+    }
+
+    .skills-content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .skills-grid {
+        gap: 10px;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+}
+
+
+
+
+/* HOBBIES PAGE */
+
+.hobbies-page {
+    margin: 0;
+    background: #10172A;
+    color: #C0C5D2;
+    overflow: hidden;
+}
+
+.hobbies-main {
+    height: calc(100vh - 65px);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* VIDEO BACKGROUND */
+
+.hobbies-video {
+    position: absolute;
+    inset: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    object-fit: cover;
+    filter: blur(4px) brightness(0.75);
+    z-index: -2;
+}
+
+.hobbies-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 23, 42, 0.25);
+    z-index: -1;
+}
+
+/* MAIN LAYOUT */
+
+.hobbies-layout {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.85fr 1.5fr;
+    gap: 35px;
+    padding: 35px 5%;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+
+.hobby-intro {
+    padding-right: 20px;
+}
+
+.hobbies-label {
+    color: #B9A7FF;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hobby-intro h1 {
+    color: #FFFFFF;
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hobbies-description {
+    color: #C0C5D2;
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 320px;
+    margin-bottom: 30px;
+}
+
+.hobby-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hobby-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 15px;
+    background: rgba(27, 33, 64, 0.65);
+    border-left: 3px solid #7562B5;
+    transition: 0.3s ease;
+}
+
+.hobby-item:hover {
+    background: rgba(117, 98, 181, 0.2);
+    border-left-color: #B9A7FF;
+    transform: translateX(5px);
+}
+
+.hobby-number {
+    color: #B9A7FF;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hobby-item h3 {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hobby-item p {
+    color: #C0C5D2;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* RIGHT SIDE: GAMING */
+
+.gaming-section {
+    min-width: 0;
+}
+
+.gaming-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.gaming-heading h2 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.gaming-count {
+    color: #B9A7FF;
+    font-size: 11px;
+    letter-spacing: 2px;
+    border: 1px solid #7562B5;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+/* GAME CARD GRID */
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.game-card {
+    min-width: 0;
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    background: rgba(27, 33, 64, 0.82);
+    border: 1px solid rgba(117, 98, 181, 0.45);
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    background: rgba(48, 42, 83, 0.95);
+    border-color: #B9A7FF;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* GAME LOGO SPACE */
+
+.game-logo {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background: rgba(16, 23, 42, 0.85);
+    border: 1px solid rgba(185, 167, 255, 0.3);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.game-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.game-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.game-info h3 {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.game-info p {
+    color: #B9A7FF;
+    font-size: 10px;
+    margin: 0;
+}
+
+.game-arrow {
+    align-self: flex-start;
+    color: #B9A7FF;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.game-card:hover .game-arrow {
+    opacity: 1;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .hobbies-page {
+        overflow: auto;
+    }
+
+    .hobbies-main {
+        height: auto;
+        min-height: calc(100vh - 65px);
+        overflow: visible;
+    }
+
+    .hobbies-video {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hobbies-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 35px 6%;
+    }
+
+    .hobby-intro {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies-layout {
+        padding: 25px 5%;
+    }
+}
+
+
+
+
+
+/* ==================================
+   RESPONSIVE DESIGN: TABLET & MOBILE
+   ================================== */
+
+/* TABLETS */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .navbar .nav-link {
+        margin-left: 6px;
+        font-size: 13px;
+    }
+
+    /* Home */
+    .hero-intro {
+        padding: 25px;
+    }
+
+    .hero-description {
+        margin: 15px;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .quick-cards {
+        gap: 8px;
+    }
+
+    .quick-card {
+        padding: 12px 8px;
+    }
+
+    /* About */
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-card .card-body {
+        padding: 20px !important;
+    }
+
+    /* Skills */
+    .skills-content {
+        padding: 22px;
+    }
+
+    .skills-grid {
+        gap: 10px;
+    }
+
+    .skill-card {
+        padding: 14px;
+    }
+
+    /* Hobbies */
+    .hobbies-layout {
+        gap: 18px;
+        padding: 22px;
+    }
+
+    .game-card {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .game-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .game-info h3 {
+        font-size: 12px;
+    }
+}
+
+
+/* MOBILE PHONES */
+@media (max-width: 768px) {
+
+    /* Allow pages to scroll instead of cutting off content */
+    html,
+    body {
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar .container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .navbar .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .navbar .nav-link {
+        margin: 0;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    /* HOME */
+    .hero {
+        min-height: auto;
+        flex-direction: column;
+    }
+
+    .hero-intro,
+    .hero-background {
+        width: 100%;
+    }
+
+    .hero-intro {
+        padding: 30px 22px;
+    }
+
+    .hero-intro h1 {
+        font-size: clamp(2rem, 9vw, 3rem);
+    }
+
+    .hero-intro p {
+        font-size: 14px;
+    }
+
+    .hero-background {
+        min-height: 300px;
+        padding: 15px 0;
+    }
+
+    .hero-description {
+        width: 90%;
+        margin: 10px;
+        padding: 22px;
+    }
+
+    .quick-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .quick-card {
+        padding: 14px;
+    }
+
+    /* ABOUT ME */
+    .about-section {
+        padding: 25px 16px;
+    }
+
+    .about-title {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+
+    .about-card .card-body {
+        padding: 20px !important;
+    }
+
+    .profile-picture,
+    .profile-placeholder {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* SKILLS */
+    .skills-section {
+        height: auto;
+        min-height: 0;
+        overflow: visible;
+        flex-direction: column;
+    }
+
+    .skills-background {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .skills-content {
+        width: 100%;
+        padding: 25px 18px;
+    }
+
+    .skills-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .skill-card {
+        padding: 14px;
+    }
+
+    .skill-card h3 {
+        font-size: 14px;
+    }
+
+    /* HOBBIES */
+    .hobbies-page {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .hobbies-main {
+        height: auto;
+        min-height: calc(100vh - 100px);
+        overflow: hidden;
+    }
+
+    .hobbies-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hobbies-layout {
+        height: auto;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        padding: 28px 18px;
+    }
+
+    .hobby-intro {
+        padding-right: 0;
+    }
+
+    .hobby-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .hobby-item {
+        padding: 13px;
+    }
+
+    .gaming-heading h2 {
+        font-size: 1.7rem;
+    }
+
+    .game-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .game-card {
+        min-height: 90px;
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .game-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .game-info h3 {
+        font-size: 11px;
+        overflow-wrap: anywhere;
+    }
+
+    .game-info p {
+        font-size: 10px;
+    }
+
+    /* CONTACT */
+    .contact-title {
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+    }
+
+    .contact-card .card-body {
+        padding: 18px !important;
+    }
+}
+
+
+/* VERY SMALL PHONES */
+@media (max-width: 380px) {
+
+    .navbar .nav-link {
+        padding: 5px 6px;
+        font-size: 11px;
+    }
+
+    .skills-grid,
+    .game-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-intro {
+        padding: 25px 16px;
+    }
+
+    .gaming-count {
+        font-size: 9px;
+        padding: 6px 8px;
+    }
+}
